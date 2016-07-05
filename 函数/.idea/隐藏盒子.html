@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #box {
+            width: 200px;
+            height: 200px;
+            background: pink;
+        }
+        .hid {
+            display:none;
+        }
+        .blo {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<input type="button" value="隐藏盒子" id="btn"/>
+<div id="box"></div>
+<script>
+    var btn = document.getElementById("btn");
+    var box = document.getElementById("box");
+    btn.onclick = function(){
+        if(btn.value == "隐藏盒子")
+        {
+            box.className = "hid";
+            btn.value = "显示盒子"
+        }else{
+            box.className = "blo";
+            btn.value = "隐藏盒子"
+        }
+
+    }
+</script>
+
+</body>
+</html>
